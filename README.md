@@ -17,19 +17,17 @@ A simple embedded UART-based command interpreter for controlling onboard LEDs us
   - `'4'` – LED 2 OFF  
   - `'5'` – LED 3 ON  
   - `'6'` – LED 3 OFF  
-  - `'7'` – All LEDs ON
+  - `'7'` – ALL LEDs ON  
+  - `'8'` – ALL LEDs OFF
 
 ## 🔧 How to Use
 1. Flash the firmware onto the PIC32 board.
-2. Open a serial terminal at the appropriate baud rate.
-3. Type characters `1` to `7` to control LEDs.
+2. Open a serial terminal at the correct baud rate (e.g., 9600 or 115200).
+3. Type characters `1` to `8` to control the LEDs.
 4. The menu automatically reprints after each command.
 
 ## 📂 Project Structure
-- `app.c` – Contains the UART interpreter logic using a simple state machine.
+- `app.c` – Contains the UART interpreter state machine logic.
 - `app.h` – Application state definitions.
-
-## ✅ Status
-✔️ Functional  
-💡 Beginner-friendly  
-🔁 Easily extendable to more commands or peripherals
+- `system_config/` – MPLAB Harmony-generated configuration files.
+- `README.md` – Project documentation.
