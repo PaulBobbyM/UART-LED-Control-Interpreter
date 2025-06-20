@@ -29,5 +29,3 @@ A simple embedded UART-based command interpreter for controlling onboard LEDs us
 ## 📂 Project Structure
 - `app.c` – Contains the UART interpreter state machine logic.
 - `app.h` – Application state definitions.
-- `system_config/` – MPLAB Harmony-generated configuration files.
-- `README.md` – Project documentation.
